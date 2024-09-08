@@ -1,0 +1,32 @@
+.font{
+    font-family: serif;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4, #ff7e5f); /* Add the first color again at the end */
+    background-size: 400% 400%; /* Ensures smooth transition across the entire gradient */
+    animation: gradientCycle 50s ease infinite;
+  }
+  
+  @keyframes gradientCycle {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%; /* Move smoothly halfway */
+    }
+    100% {
+      background-position: 0% 50%; /* Complete cycle back to the start */
+    }
+  }
+  #custom-cards{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .right{
+    float: right;
+  }
+  
+  
+  
